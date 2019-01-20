@@ -1,7 +1,7 @@
 FROM php:7.3-fpm
 MAINTAINER Piero Recchia <www.pierorecchia.com>
 
-RUN apt-get update && apt-get install -y  zlib1g-dev libicu-dev libpq-dev imagemagick git mysql-client\
+RUN apt-get update && apt-get install -y  zlib1g-dev libicu-dev libpq-dev libzip-dev imagemagick git mysql-client\
 	&& docker-php-ext-install opcache \
 	&& docker-php-ext-install intl \
         && docker-php-ext-install zip \
