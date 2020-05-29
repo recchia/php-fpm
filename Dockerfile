@@ -8,6 +8,6 @@ RUN apk update && apk add --no-cache zlib-dev icu-dev libpq libzip-dev imagemagi
 	&& docker-php-ext-install pdo_mysql \
 	&& docker-php-ext-install pgsql pdo_pgsql \
 	&& php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/local/bin --filename=composer \
-	&& chmod +sx /usr/local/bin/composer \
+	&& chmod +sx /usr/local/bin/composer
 
 EXPOSE 9000
