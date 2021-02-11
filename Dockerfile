@@ -1,5 +1,5 @@
 FROM php:7.4-fpm-alpine
-MAINTAINER Piero Recchia <www.pierorecchia.com>
+LABEL maintainer="Piero Recchia <www.pierorecchia.com>"
 
 RUN apk update && apk add --no-cache zlib-dev icu-dev libpq libzip-dev imagemagick git mysql-client postgresql-dev \
 	&& docker-php-ext-install opcache \
