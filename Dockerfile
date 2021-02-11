@@ -1,5 +1,5 @@
 FROM php:7.2-fpm-alpine
-MAINTAINER Piero Recchia <www.pierorecchia.com>
+LABEL maintainer="Piero Recchia <www.pierorecchia.com>"
 
 RUN apk update && apk --no-cache add --virtual .build-deps $PHPIZE_DEPS \
     && apk add --no-cache autoconf zlib-dev icu-dev libpq libzip-dev imagemagick git mysql-client postgresql-dev \
