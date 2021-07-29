@@ -1,4 +1,4 @@
-FROM php:7.4-fpm-alpine
+FROM php:8.0-fpm-alpine
 LABEL maintainer="Piero Recchia <www.pierorecchia.com>"
 
 RUN apk update && apk add --no-cache zlib-dev icu-dev libpq libzip-dev imagemagick git mysql-client postgresql-dev \
